@@ -14,10 +14,10 @@ module.exports = {
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "x9gu5aiii1pz51z2v7f3",
+    "password": "pscale_pw_RhuSgjEqSr0KwzcfhdgewLdYy5bms2wij5TYm0cPg3M",
+    "database": "structure",
+    "host": "us-east.connect.psdb.cloud",
     "dialect": "mysql"
   }
 }
