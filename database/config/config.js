@@ -14,8 +14,8 @@ module.exports = {
     "dialect": "mysql"
   },
   "production": {
-    "username": "jeysaiwj4ifxq0k1blsi",
-    "password": "pscale_pw_j6pwN62MvqtXp01pmIAZzgb1BzptWM37mycPyDyD4oo",
+    "username": "ie8by5iktvowamgb3f7c",
+    "password": "pscale_pw_5KA6pTwX9u4kppLKfqiGdWPrOVJkDDzaz8pQ8j1pvGI",
     "database": "structure",
     "host": "us-east.connect.psdb.cloud",
     "dialect": "mysql"
