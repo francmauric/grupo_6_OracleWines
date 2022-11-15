@@ -3,7 +3,7 @@ CREATE TABLE `productcategory` (
   `productCategory_id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   PRIMARY KEY (productCategory_id)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+) /* ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 */;
 
 
 CREATE TABLE `invoice` (
@@ -42,7 +42,7 @@ CREATE TABLE `products` (
   `image` text NOT NULL,
   PRIMARY KEY (product_id),
   KEY product_category_id_idx(category_id)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+) /* ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 */;
 
 
 CREATE TABLE `users` (
@@ -60,7 +60,7 @@ CREATE TABLE `users` (
   KEY invoice_id_idx(invoice_id),
   KEY interest_id_idx(interest_id),
 KEY userCategory_id_idx(userCategory_id)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+) /* ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 */;
 
 
  CREATE TABLE `cart` (
@@ -70,7 +70,7 @@ KEY userCategory_id_idx(userCategory_id)
   PRIMARY KEY (cart_id),
   KEY user_id_idx(user_id),
   KEY product_id_idx(product_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) /* ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 */;
 
 
 
