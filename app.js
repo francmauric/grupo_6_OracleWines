@@ -50,6 +50,6 @@ app.use('/api/users', apiUsersRouter);
 app.use('/api/products', apiProductsRouter);
 
 //servidor
-app.listen(3100,() => {
+app.listen(process.env.PORT || 3100,() => {
     console.log("wey esta madre si funciona en el puerto 3100")
 })
