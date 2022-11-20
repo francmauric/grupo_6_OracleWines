@@ -1,12 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 header{
     background-image: url("../images/Header Vinos 1.jpg");
     background-size: cover;
     width: 100%;
+    justify-content: center;
+    
 }
-
+ 
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
 
@@ -17,19 +26,69 @@ header{
     border-radius: 50%;
     border: solid 1px lightgray;
 }
-
+/* .barra-busqueda{
+    paddi
+} */
 .espacio-busqueda{
-    max-width: 60%;
+    max-width: 80%;
     border: solid 1px lightgray;
 }
 
-.burger-button{
+/* button burguer con despliegue */
+.bar-btn{
+    color: white;
+    font-size: 30px;
+    width: 30px;
+    margin: auto;
+    padding:10px;
+    padding-left: 45%;
+    transition: all 450ms;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top:136px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgb(248, 8, 8);
+    transition: .3s;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+
+/* .burger-button{
     color: white;
     font-size: 30px;
     width: 30px;
     margin: auto;
     transition: all 450ms;
-}
+} */
 
 .navbarGral{
     width: 100%;
@@ -156,7 +215,7 @@ header button:hover{
         max-height: 195px;
     }
 
-    .burger-button{
+    .bar-btn{
         display: none;
     }
 

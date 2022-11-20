@@ -6,19 +6,25 @@
         <a href="/"><img class="logo" src="/images/Oracle Wines (5).png" alt="Oracle Wines"></a>
         <div class="barra-busqueda">
             <form action="/products/buscar/detail" method="POST">
-            <input class="espacio-busqueda" type="text" placeholder="Buscar producto" name="keyword">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="espacio-busqueda" type="text" placeholder="Buscar producto" name="keyword">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
     </div>
-    <div class="burger-button"><i class="fa-solid fa-bars"></i></div>
-    
+    <input type="checkbox" id="check">
+    <label for="check" class="bar-btn">   
+         <i class="fa-solid fa-bars"></i>
+    </label>  
+    <ul class="nav-menu">
+       <li><a class="" href="/products">Productos</a></li>
+       <li><a class="" id="secciones" href="/secciones">Secciones</a></li> 
+    </ul>  
     <div class="navbarGral">
         <div class="navbar-inferior">
             <div class="navbar-left">
                 <a class="icono-home" href="/"><i class="fa-solid fa-house"></i></a>
                 <a class="seccion-menu" href="/products">Productos</a>
-                <a class="seccion-menu" id="secciones" href="">Secciones
+                <a class="seccion-menu" id="secciones" href="">Secciones</a>
                     <ul class="tipos-vinos">
                         <li><a class="seccion-menu" href="/products/andinos">Andinos </a></li>
                         <li><a class="seccion-menu" href="/products/patagonicos">Patagónicos</a></li>
@@ -37,11 +43,11 @@
                             <li><a class="seccion-menu" href="/users/logout">Log Out </a></li>
                         </ul>
                         <% } else { %>
-                    <ul class="reg-log">
-                        <li><a class="seccion-menu" href="/users/login">Ingresá </a></li>
-                        <li><a class="seccion-menu" href="/users/register">Registrate </a></li>
-                    </ul>
-                    <% } %>
+                            <ul class="reg-log">
+                                <li><a class="seccion-menu" href="/users/login">Ingresá </a></li>
+                                <li><a class="seccion-menu" href="/users/register">Registrate </a></li>
+                            </ul>
+                            <% } %>
                 </div>
                 <div class="logo-carrito">
                     <a href="/products/cart"><i class="fa-solid fa-cart-shopping"></i></a>

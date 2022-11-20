@@ -2,7 +2,7 @@ module.exports = {
   development: {
     username: "root",
     password: null,
-    database: "oracle_wines",
+    database: "oraclewines",
     host: "127.0.0.1",
     dialect: "mysql",
     ssl: { rejectUnauthorized: true },
