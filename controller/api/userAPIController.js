@@ -47,7 +47,7 @@ const userAPIController = {
                         "bday": users.bday,
                         "invoice_id": users.invoice_id,
                         "interest_id": users.interest_id,
-                        "picture": "http://localhost:3100/images/users/"+ users.picture
+                        "picture": "https://oraclewines.onrender.com//images/users/"+ users.picture
 
                     }
                     

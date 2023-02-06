@@ -88,7 +88,7 @@ const productsController = {
 						"description": product.description,
 						"extra_description": product.extra_description,
 						"rate": product.rate,
-                        "image": "http://localhost:3100/images/"+ product.image
+                        "image": "https://oraclewines.onrender.com/images/"+ product.image
 
                     }
                 }
